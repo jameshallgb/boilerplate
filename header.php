@@ -18,7 +18,21 @@
         <link rel="profile" href="http://gmpg.org/xfn/11">
         
         <script src="https://kit.fontawesome.com/6f446dcca7.js" crossorigin="anonymous"></script>
-        
+
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+                }
+            }
+            }
+        </script>
+
         <?php wp_head(); ?>
     
     </head>
