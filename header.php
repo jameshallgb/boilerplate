@@ -173,7 +173,7 @@
                                         'container_id'    => 'main-nav',
                                         'container_class' => 'collapse navbar-collapse',
                                         'menu_id'         => false,
-                                        'menu_class'      => 'navbar-nav lg:flex',
+                                        'menu_class'      => 'navbar-nav lg:flex justify-center',
                                         'depth'           => 3,
                                         'walker'        => new NWD_Walker()
                                     ));
