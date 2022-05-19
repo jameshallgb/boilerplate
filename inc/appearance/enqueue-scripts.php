@@ -5,16 +5,7 @@
  */
 
 function nwd_theme_scripts() {
-    
-	// load bootstrap css
-    if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        //wp_enqueue_style( 'nwd-theme-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
-        //wp_enqueue_style( 'nwd-theme-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
-    } else {
-        //wp_enqueue_style( 'nwd-theme-bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
-        //wp_enqueue_style( 'nwd-theme-fontawesome-cdn', get_template_directory_uri() . '/assets/css/fontawesome.min.css' );
-    }
-    
+
 	// Load theme scripts. styles and fonts
 	wp_enqueue_style( 'nwd-theme-style', get_stylesheet_uri() );
 	
@@ -67,23 +58,6 @@ function nwd_theme_scripts() {
     // Internet Explorer HTML5 support
     wp_enqueue_script( 'html5hiv',get_template_directory_uri().'/assets/js/html5.js', array(), '3.7.0', false );
     wp_script_add_data( 'html5hiv', 'conditional', 'lt IE 9' );
-
-	// load bootstrap js
-    if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        
-        /*
-        wp_enqueue_script('nwd-theme-popper-defer', 'https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js', array(), '', true );
-    	wp_enqueue_script('nwd-theme-bootstrapjs-defer', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js', array(), '', true );
-    	*/
-    	
-    } else {
-        
-        /*
-        wp_enqueue_script('nwd-theme-popper-defer', get_template_directory_uri() . '/assets/js/popper.min.js', array(), '', true );
-        wp_enqueue_script('nwd-theme-bootstrapjs-defer', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '', true );
-        */
-        
-    }
     
     wp_enqueue_script('nwd-theme-themejs-defer', get_template_directory_uri() . '/assets/js/theme-script.min.js', array(), '', true );
 	wp_enqueue_script( 'nwd-theme-skip-link-focus-fix-defer', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.min.js', array(), '20151215', true );
@@ -116,7 +90,3 @@ function nwd_theme_preload( $hints, $relation_type ){
 } 
 
 add_filter( 'wp_resource_hints', 'nwd_theme_preload', 10, 2 );
-
-
-
-

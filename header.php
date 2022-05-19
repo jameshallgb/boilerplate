@@ -22,14 +22,21 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
         <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                colors: {
-                    clifford: '#da373d',
-                }
-                }
-            }
+            tailwind.config = {
+
+                theme: {
+                    extend: {
+
+                    colors: {
+                        clifford: '#da373d',
+                        }
+                    },
+                    
+                    container: {
+                        center: true,
+                    }
+                },
+
             }
         </script>
 
@@ -95,13 +102,13 @@
          * 
          */     ?>
          
-            <header id="masthead" class="site-header navbar-static-top mb-0 m-auto">
+            <header id="masthead" class="site-header navbar-static-top mb-0 m-auto py-2">
     
                 <div class="container">
                 
-                    <nav class="navbar navbar-expand-xl">
+                    <nav class="navbar navbar-expand-xl flex items-center">
                         
-                        <div class="flex-logo h-auto col-3 col-xl-2">
+                        <div class="flex-logo">
                         
                             <?php if ( get_theme_mod( 'nwd_theme_logo' ) ): ?>
                             
@@ -118,8 +125,10 @@
                             <?php endif; ?>
     
                         </div>
-    
-                        <div id="main-nav" class="main-nav-container flex items-stretch align-items-xl-center flex-direction-reverse flex-fill flex-xl-auto">
+
+                        <div id="main-nav" class="main-nav-container flex grow">
+
+                        <?php /*
 
                             <div class="menu-animate d-xl-none">
                                 
@@ -131,7 +140,9 @@
                                 
                             </div>
 
-                            <div class="flex-banner flex justify-end flex-fill flex-xl-auto items-center order-last">
+                            */ ?>
+
+                            <div class="flex-banner flex justify-end flex-fill items-center order-last">
                     
                                 <?php
                             
@@ -140,21 +151,19 @@
         
                                 if (!empty($banner_button_text)){ ?>
                         
-                                    <a class="button px-3 py-1 py-md-2 px-xl-4" href="<?php echo $banner_button_link; ?>"><?php echo $banner_button_text; ?></a>
+                                    <a class="button" href="<?php echo $banner_button_link; ?>"><?php echo $banner_button_text; ?></a>
         
                                 <?php } ?>
                                 
-                                <button class="navbar-toggler col-3 p-0 flex d-xl-none justify-center" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler lg:hidden" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
                                 
-                                    <i style="font-size: 1.4em" class="fa-solid fa-bars"></i>
-                                    
-                                    <i style="font-size: 1.4em" class="fas fa-times"></i>
+                                    <i class="fa-solid fa-bars"></i>
                                 
                                 </button>
                             
                             </div>
 
-                            <div class="navbar-collapse collapse">
+                            <div class="navbar-collapse collapse justify-center grow">
 
                                 <?php
                                 
@@ -164,7 +173,7 @@
                                         'container_id'    => 'main-nav',
                                         'container_class' => 'collapse navbar-collapse',
                                         'menu_id'         => false,
-                                        'menu_class'      => 'navbar-nav',
+                                        'menu_class'      => 'navbar-nav lg:flex',
                                         'depth'           => 3,
                                         'walker'        => new NWD_Walker()
                                     ));
@@ -221,7 +230,6 @@
                         
                     <?php } ?>
     
-    
                     <div class="subheader-content relative container flex items-end justify-between h-full">
     
     		            <?php
@@ -271,9 +279,7 @@
          
             endif; ?>
     
-    
         <?php
-    
     
         /**
          * Start main Page content
@@ -305,5 +311,3 @@
     		    <div class="flex"><!-- Start Row -->
     			    
                     <?php endif; ?>
-                    
-                    
