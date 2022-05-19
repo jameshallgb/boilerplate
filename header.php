@@ -56,9 +56,9 @@
                 $second_col = get_theme_mod( 'top_bar_second_col' );
                 $third_col = get_theme_mod( 'top_bar_third_col' ); ?>
     
-                    <div class="top-bar d-flex align-items-center py-2">
+                    <div class="top-bar flex items-center py-2">
     
-                        <div class="container d-flex justify-content-between text-white">
+                        <div class="container flex justify-between text-white">
     
                             <?php 
                             
@@ -99,7 +99,7 @@
     
                 <div class="container">
                 
-                    <nav class="navbar navbar-expand-xl p-0">
+                    <nav class="navbar navbar-expand-xl">
                         
                         <div class="flex-logo h-auto col-3 col-xl-2">
                         
@@ -107,34 +107,31 @@
                             
                                 <a href="<?php echo esc_url( home_url( '/' )); ?>">
                                     
-                                    <img class="main-logo w-100 p-xl-1 my-3" src="<?php echo esc_url(get_theme_mod( 'nwd_theme_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
-                                    
-                                    <img class="small-logo w-100 p-xl-1 my-3" src="https://waves.nwddev.net/wp-content/uploads/2022/05/waves-logo-small.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                                    <img class="main-logo" src="<?php echo esc_url(get_theme_mod( 'nwd_theme_logo' )); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                                     
                                 </a>
                                 
                             <?php else : ?>
                             
-                                <a class="site-title text-reset" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
+                                <a class="site-title" href="<?php echo esc_url( home_url( '/' )); ?>"><?php esc_url(bloginfo('name')); ?></a>
                                 
                             <?php endif; ?>
     
                         </div>
     
-                        <div id="main-nav" class="main-nav-container d-flex align-items-strech align-items-xl-center flex-direction-reverse flex-fill flex-xl-auto">
+                        <div id="main-nav" class="main-nav-container flex items-stretch align-items-xl-center flex-direction-reverse flex-fill flex-xl-auto">
 
                             <div class="menu-animate d-xl-none">
                                 
-                                <div class="menu-animated-layer h-100 bg-white layer-one" style="z-index: -1; width: calc(100vw - 35vw);"></div>
+                                <div class="menu-animated-layer h-full bg-white layer-one" style="z-index: -1; width: calc(100vw - 35vw);"></div>
                             
                                 <div class="menu-animated-layer m-auto br theme-bg layer-two" style="z-index: -2; height: 94%; width: calc(100vw - 29vw);"></div>
                                 
                                 <div class="menu-animated-layer m-auto br theme-bg-dark layer-three" style="z-index: -3; height: 98%; width: calc(100vw - 22vw);"></div>
                                 
-                                
                             </div>
 
-                            <div class="flex-banner d-flex justify-content-end flex-fill flex-xl-auto align-items-center order-last">
+                            <div class="flex-banner flex justify-end flex-fill flex-xl-auto items-center order-last">
                     
                                 <?php
                             
@@ -147,7 +144,7 @@
         
                                 <?php } ?>
                                 
-                                <button class="navbar-toggler col-3 p-0 d-flex d-xl-none justify-content-center" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler col-3 p-0 flex d-xl-none justify-center" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
                                 
                                     <i style="font-size: 1.4em" class="fa-solid fa-bars"></i>
                                     
@@ -214,18 +211,18 @@
     
                 if( !$remove_subheader==1 ) { ?>
      
-                <section class="subheader position-relative" style="<?php if (!empty($headerimg)){ echo 'background-image: url('.$headerimg.');'; } ?>">
+                <section class="subheader relative" style="<?php if (!empty($headerimg)){ echo 'background-image: url('.$headerimg.');'; } ?>">
     
                     <?php $overlay_colour = get_theme_mod( 'custom_overlay_colour' );
     
                     if ( !empty($overlay_colour) && !empty($headerimg) ) { ?>
     
-                        <div class="main-overlay position-absolute h-100 w-100" style="top: 0;"></div>
+                        <div class="main-overlay absolute h-full w-100" style="top: 0;"></div>
                         
                     <?php } ?>
     
     
-                    <div class="container subheader-content h-100 d-flex align-items-end justify-content-between position-relative">
+                    <div class="subheader-content relative container flex items-end justify-between h-full">
     
     		            <?php
     		        
@@ -305,7 +302,7 @@
     	    
     		<div class="container">
     		
-    		    <div class="row"><!-- Start Row -->
+    		    <div class="flex"><!-- Start Row -->
     			    
                     <?php endif; ?>
                     

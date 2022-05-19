@@ -8,11 +8,11 @@ function nwd_theme_scripts() {
     
 	// load bootstrap css
     if ( get_theme_mod( 'cdn_assets_setting' ) === 'yes' ) {
-        wp_enqueue_style( 'nwd-theme-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
-        wp_enqueue_style( 'nwd-theme-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
+        //wp_enqueue_style( 'nwd-theme-bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css' );
+        //wp_enqueue_style( 'nwd-theme-fontawesome-cdn', 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' );
     } else {
-        wp_enqueue_style( 'nwd-theme-bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
-        wp_enqueue_style( 'nwd-theme-fontawesome-cdn', get_template_directory_uri() . '/assets/css/fontawesome.min.css' );
+        //wp_enqueue_style( 'nwd-theme-bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
+        //wp_enqueue_style( 'nwd-theme-fontawesome-cdn', get_template_directory_uri() . '/assets/css/fontawesome.min.css' );
     }
     
 	// Load theme scripts. styles and fonts

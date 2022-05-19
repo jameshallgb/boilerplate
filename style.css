@@ -17,92 +17,6 @@ Tags: bespoke, nwd
     --accentColour: rgb(45, 148, 186);
 }
 
-
-.br {
-    border-radius: 1.5rem;
-}
-
-#page .product_meta a {
-    color: var(--primaryColour);
-}
-
-.rounded-xl {
-    border-radius: 1.5rem;
-}
-
-.theme-color {
-    color: var(--primaryColour);
-}
-
-.theme-bg {
-    background-color: var(--primaryColour);
-}
-
-.theme-bg-dark {
-    background-color: var(--secondaryColour);
-}
-
-.fl-builder-content div:nth-of-type(1) .fl-row-content-wrap {
-    padding-top: 250px;
-}
-
-
-
-body.woocommerce #page  div.product .woocommerce-tabs ul.tabs li::after,
-body.woocommerce #page  div.product .woocommerce-tabs ul.tabs li::before,
-body.woocommerce #page div.product .woocommerce-tabs ul.tabs::before {
-    display: none;
-}
-
-body.woocommerce #page div.product .woocommerce-tabs:after {
-    position: absolute;
-    content: " ";
-    left: -100%;
-    width: 1000%;
-    height: 100%;
-    top: 0;
-    background-color: #f1f1f1;
-    z-index: -1;
-}
-
-
-.menu-animated-layer {
-    position: fixed;
-    top: 0;
-    width: calc(100vw - 35vw);
-    right: 0;
-    bottom: 0;
-}
-
-
-#content .woocommerce form p {
-    display: block;
-}
-
-
-
-body #page .products .product {
-    border-radius: 18px 18px 30px 30px;
-    overflow: hidden;
-}
-
-body #page .products .product > div .woocommerce-LoopProduct-link {
-    padding: 1rem 1.5rem;
-}
-
-body #page a.woocommerce-LoopProduct-link.woocommerce-loop-product__link .woocommerce-loop-product__title {
-    color: white;
-}
-
-body #page .price {
-    background-color: #394043;
-    color: white;
-    padding: 1em;
-    border-radius: 20px;
-}
-
-
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -283,11 +197,6 @@ header#masthead {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
     z-index: 10;
     background-color: white;
-    left: 20px;
-    right: 20px;
-    border-radius: 30px;
-    top: 20px;
-    max-width: 1200px;
     transition: 400ms ease;
 }
 
