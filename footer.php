@@ -18,7 +18,7 @@
             		
             	</main><!-- End Content -->
             	
-                <?php get_template_part( 'footer-widget' ); ?>
+                <?php get_template_part( '_views/layouts/footer-widget' ); ?>
                 
                 <footer id="colophon" class="site-footer">
             
