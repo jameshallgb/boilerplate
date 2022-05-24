@@ -12,7 +12,12 @@ module.exports = {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      colors: {
+        'themeColour':'#BAA333',
+      }
+
+    },
   },
   plugins: [],
 }
