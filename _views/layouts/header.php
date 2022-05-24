@@ -5,7 +5,7 @@
  * 
  */     ?>
  
-    <header id="masthead" class="site-header navbar-static-top mb-0 m-auto py-2">
+    <header id="masthead" class="site-header navbar-static-top mb-0 m-auto py-5">
 
         <div class="container">
         
@@ -29,23 +29,19 @@
 
                 </div>
 
-                <div id="header-nav" class="main-nav-container flex grow">
+                <div id="header-nav" class="main-nav-container justify-end flex grow">
 
-         
-
-                    <div class="menu-animate d-xl-none">
+                    <div class="menu-animate xl:hidden">
                         
-                        <div class="menu-animated-layer fixed h-full bg-white layer-one" style="z-index: -1; width: calc(100vw - 35vw); top: 0; right: 0;"></div>
+                        <div class="menu-animated-layer layer-one fixed h-full top-0 right-0 bg-white" style="z-index: -1; width: calc(100vw - 35vw)"></div>
                     
-                        <div class="menu-animated-layer fixed m-auto br theme-bg layer-two" style="z-index: -2; height: 94%; width: calc(100vw - 29vw); top: 0; right: 0; background-color: #a1e7fd;"></div>
+                        <div class="menu-animated-layer layer-two fixed h-full top-0 right-0 bg-slate-500" style="z-index: -2; width: calc(100vw - 29vw);"></div>
                         
-                        <div class="menu-animated-layer fixed m-auto br theme-bg-dark layer-three" style="z-index: -3; height: 98%; width: calc(100vw - 22vw); top: 0; right: 0; background-color: #3128ff;"></div>
+                        <div class="menu-animated-layer layer-three fixed h-full top-0 right-0 bg-slate-900" style="z-index: -3; width: calc(100vw - 22vw);"></div>
                         
                     </div>
 
- 
-
-                    <div class="flex-banner flex justify-end flex-fill items-center order-last">
+                    <div class="flex-banner flex justify-end flex-fill items-center space-x-5 order-last">
             
                         <?php
                     
@@ -58,7 +54,7 @@
 
                         <?php } ?>
                         
-                        <button class="navbar-toggler lg:hidden" type="button" data-target="#primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler xl:hidden" type="button" data-target="#primary-nav" aria-expanded="false" aria-label="Toggle navigation">
                         
                             <i class="fa-solid fa-bars"></i>
                         
@@ -66,7 +62,7 @@
                     
                     </div>
 
-                    <div class="navbar-collapse collapse justify-center grow hidden lg:flex">
+                    <div class="navbar-collapse collapse justify-center grow hidden xl:flex">
 
                         <?php
                         
@@ -75,7 +71,7 @@
                                 'container'       => 'ul',
                                 'container_id'    => 'primary-nav',
                                 'menu_id'         => false,
-                                'menu_class'      => 'navbar-nav lg:flex justify-center',
+                                'menu_class'      => 'navbar-nav xl:flex justify-center items-center',
                                 'depth'           => 3,
                                 'walker'        => new NWD_Walker()
                             ));

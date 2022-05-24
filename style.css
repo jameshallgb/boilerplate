@@ -192,34 +192,6 @@ header#masthead .flex-logo img {
     transition: 400ms ease;
 }
 
-header#masthead.small-header .flex-logo img {
-    max-width: 70px;
-}
-
-header#masthead.small-header {
-    top: 0;
-    background-color: #273238;
-    border-radius: 0 0 30px 30px;
-}
-
-header#masthead:not(.small-header) .small-logo,
-header#masthead.small-header .main-logo {
-    display: none;
-}
-
-header#masthead.small-header div#header-nav:not(.show) .navbar-toggler i,
-header#masthead.small-header div#header-nav:not(.show) li a {
-    color: white !important;
-}
-
-header#masthead div#header-nav .cart-icon {
-    background-color: var(--secondaryColour);
-}
-
-header#masthead.small-header div#header-nav .cart-icon {
-    background-color: var(--primaryColour);
-}
-
 
 /*--------------------------------------------------------------
 ## Top Bar
@@ -258,8 +230,6 @@ header#masthead.small-header div#header-nav .cart-icon {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-
-
 
 body #masthead .navbar-nav > li > a {
     font-weight: 600;
@@ -354,11 +324,9 @@ body #masthead .navbar-nav > li > a {
     .main-nav-container.show-finish .flex-banner {
         opacity: 1;
         transform: translateY(0);
-        padding: 1em;
         transition: 500ms ease;
     }
 }
-
 
 
 /*--------------------------------------------------------------
