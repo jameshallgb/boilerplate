@@ -8,7 +8,7 @@
  * 
  */
  
-require get_template_directory() . '/inc/nwd_includes.php';
+require get_template_directory() . '/_functions/functions-controller.php';
 
 
 /**
