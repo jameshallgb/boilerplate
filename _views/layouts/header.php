@@ -29,21 +29,21 @@
 
                 </div>
 
-                <div id="main-nav" class="main-nav-container flex grow">
+                <div id="header-nav" class="main-nav-container flex grow">
 
-                <?php /*
+         
 
                     <div class="menu-animate d-xl-none">
                         
-                        <div class="menu-animated-layer h-full bg-white layer-one" style="z-index: -1; width: calc(100vw - 35vw);"></div>
+                        <div class="menu-animated-layer fixed h-full bg-white layer-one" style="z-index: -1; width: calc(100vw - 35vw); top: 0; right: 0;"></div>
                     
-                        <div class="menu-animated-layer m-auto br theme-bg layer-two" style="z-index: -2; height: 94%; width: calc(100vw - 29vw);"></div>
+                        <div class="menu-animated-layer fixed m-auto br theme-bg layer-two" style="z-index: -2; height: 94%; width: calc(100vw - 29vw); top: 0; right: 0; background-color: #a1e7fd;"></div>
                         
-                        <div class="menu-animated-layer m-auto br theme-bg-dark layer-three" style="z-index: -3; height: 98%; width: calc(100vw - 22vw);"></div>
+                        <div class="menu-animated-layer fixed m-auto br theme-bg-dark layer-three" style="z-index: -3; height: 98%; width: calc(100vw - 22vw); top: 0; right: 0; background-color: #3128ff;"></div>
                         
                     </div>
 
-                    */ ?>
+ 
 
                     <div class="flex-banner flex justify-end flex-fill items-center order-last">
             
@@ -58,7 +58,7 @@
 
                         <?php } ?>
                         
-                        <button class="navbar-toggler lg:hidden" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler lg:hidden" type="button" data-target="#primary-nav" aria-expanded="false" aria-label="Toggle navigation">
                         
                             <i class="fa-solid fa-bars"></i>
                         
@@ -66,15 +66,14 @@
                     
                     </div>
 
-                    <div class="navbar-collapse collapse justify-center grow">
+                    <div class="navbar-collapse collapse justify-center grow hidden lg:flex">
 
                         <?php
                         
                             wp_nav_menu(array(
                                 'theme_location'    => 'primary',
                                 'container'       => 'ul',
-                                'container_id'    => 'main-nav',
-                                'container_class' => 'collapse navbar-collapse',
+                                'container_id'    => 'primary-nav',
                                 'menu_id'         => false,
                                 'menu_class'      => 'navbar-nav lg:flex justify-center',
                                 'depth'           => 3,

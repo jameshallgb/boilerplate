@@ -28,7 +28,7 @@
     
                 if( !$remove_subheader==1 ) { ?>
      
-                <section class="subheader relative" style="<?php if (!empty($headerimg)){ echo 'background-image: url('.$headerimg.');'; } ?>">
+                <section class="subheader relative py-10" style="<?php if (!empty($headerimg)){ echo 'background-image: url('.$headerimg.');'; } ?>">
     
                     <?php $overlay_colour = get_theme_mod( 'custom_overlay_colour' );
     
@@ -44,23 +44,23 @@
     		        
     		                if ( !empty($cat) ) {
     		
-    		                    single_cat_title( '<h2 class="entry-title">', '</h2>' );
+    		                    single_cat_title( '<h2 class="entry-title m-0">', '</h2>' );
                             
                             } elseif ( is_single() ) {
                                             
-                                the_title( '<h2 class="entry-title">', '</h2>' );
+                                the_title( '<h2 class="entry-title m-0">', '</h2>' );
                                             
                             } elseif ( is_home() ) {
                                             
-                                echo '<h2 class="entry-title">Blog</h2>';
+                                echo '<h2 class="entry-title m-0">Blog</h2>';
                                             
                             } else {
                                             
-                                the_title( '<h2 class="entry-title">', '</h2>' );
+                                the_title( '<h2 class="entry-title m-0">', '</h2>' );
                                             
                             } ?>
     
-                        <div class="subheader-meta" style="bottom: 0;">
+                        <div class="subheader-meta">
     
                             <?php
         		        

@@ -207,16 +207,16 @@ header#masthead.small-header .main-logo {
     display: none;
 }
 
-header#masthead.small-header div#main-nav:not(.show) .navbar-toggler i,
-header#masthead.small-header div#main-nav:not(.show) li a {
+header#masthead.small-header div#header-nav:not(.show) .navbar-toggler i,
+header#masthead.small-header div#header-nav:not(.show) li a {
     color: white !important;
 }
 
-header#masthead div#main-nav .cart-icon {
+header#masthead div#header-nav .cart-icon {
     background-color: var(--secondaryColour);
 }
 
-header#masthead.small-header div#main-nav .cart-icon {
+header#masthead.small-header div#header-nav .cart-icon {
     background-color: var(--primaryColour);
 }
 
@@ -260,7 +260,6 @@ header#masthead.small-header div#main-nav .cart-icon {
 --------------------------------------------------------------*/
 
 
-/*
 
 body #masthead .navbar-nav > li > a {
     font-weight: 600;
@@ -276,7 +275,7 @@ body #masthead .navbar-nav > li > a {
 
 @media screen and ( max-width: 1199px) {
 
-    body div#main-nav.main-nav-container.show {
+    body div#header-nav.main-nav-container.show {
         position: fixed;
         right: 0;
         right: 0;
@@ -292,51 +291,51 @@ body #masthead .navbar-nav > li > a {
         display: block;
     }
 
-    body div#main-nav .navbar-collapse,
-    body div#main-nav.main-nav-container .menu-animate div {
+    body div#header-nav .navbar-collapse,
+    body div#header-nav.main-nav-container .menu-animate div {
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
         transition: all 800ms;
     }
     
-    body div#main-nav.show-finish .navbar-collapse,
-    body div#main-nav.main-nav-container.show .menu-animate div {
+    body div#header-nav.show-finish .navbar-collapse,
+    body div#header-nav.main-nav-container.show .menu-animate div {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     
-*/
 
-    /* Opening aniamtion duration 
-    body div#main-nav.main-nav-container.isopening .layer-one {
+
+    /* Opening aniamtion duration */
+    body div#header-nav.main-nav-container.isopening .layer-one {
         transition: all 1000ms;
     }
     
-    body div#main-nav.main-nav-container.isopening .layer-two {
+    body div#header-nav.main-nav-container.isopening .layer-two {
         transition: all 700ms;
     }
     
-    body div#main-nav.main-nav-container.isopening .layer-three {
+    body div#header-nav.main-nav-container.isopening .layer-three {
         transition: all 400ms;
     }
-*/
+
     
-    /* Closing aniamtion duration 
-    body div#main-nav.main-nav-container.isclosing .layer-one {
+    /* Closing aniamtion duration */
+    body div#header-nav.main-nav-container.isclosing .layer-one {
         transition: all 350ms;
     }
     
-    body div#main-nav.main-nav-container.isclosing .layer-two {
+    body div#header-nav.main-nav-container.isclosing .layer-two {
         transition: all 420ms;
     }
     
-    body div#main-nav.main-nav-container.isclosing .layer-three {
+    body div#header-nav.main-nav-container.isclosing .layer-three {
         transition: all 600ms;
     }
     
-*/
 
-    /* Animate flex banner 
+
+    /* Animate flex banner */
     
     .main-nav-container .flex-banner {
         transition: 225ms ease;
@@ -360,7 +359,7 @@ body #masthead .navbar-nav > li > a {
     }
 }
 
-*/
+
 
 /*--------------------------------------------------------------
 ## Dropdown
@@ -456,7 +455,6 @@ body #page .dropdown-menu {
     transition: 400ms ease;
     border-radius: 0;
     text-align: center;
-    border-radius: 30px;
     line-height: 1.5 !important;
 }
 
@@ -467,7 +465,6 @@ body #page .dropdown-menu {
     transition: 400ms ease;
     border-radius: 0;
     text-align: center;
-    border-radius: 30px;
 }
 
 .fl-builder-content a.fl-button, .fl-builder-content a.fl-button:visited {
@@ -570,14 +567,6 @@ body #page .dropdown-menu {
     margin: 0 0 1.5em;
 }
 
-.widget select {
-    max-width: 100%;
-}
-
-.widget_search .search-form input[type="submit"] {
-    display: none;
-}
-
 .nav > li > a:focus,
 .nav > li > a:hover {
     background-color: var(--primaryColour);
@@ -635,10 +624,6 @@ body:not(.home) .entry-summary {
 .page-links {
     clear: both;
     margin: 0 0 1.5em;
-}
-
-.posted-on, .byline, .comments-link {
-    color: rgb(255, 255, 255);
 }
 
 
