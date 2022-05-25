@@ -5,7 +5,7 @@
  * 
  */     ?>
  
-    <header id="masthead" class="site-header navbar-static-top mb-0 m-auto py-5">
+    <header id="masthead" class="site-header bg-white navbar-static-top mb-0 m-auto py-5 z-10 shadow-md">
 
         <div class="container">
         
@@ -29,7 +29,7 @@
 
                 </div>
 
-                <div id="header-nav" class="main-nav-container justify-end flex grow">
+                <div id="header-nav" class="main-nav-container justify-end flex grow z-30">
 
                     <div class="menu-animate xl:hidden">
                         
@@ -56,7 +56,7 @@
                         
                         <button class="navbar-toggler xl:hidden" type="button" data-target="#primary-nav" aria-expanded="false" aria-label="Toggle navigation">
                         
-                            <i class="fa-solid fa-bars"></i>
+                            Open
                         
                         </button>
                     

@@ -28,7 +28,7 @@
     
                 if( !$remove_subheader==1 ) { ?>
      
-                <section class="subheader relative py-10" style="<?php if (!empty($headerimg)){ echo 'background-image: url('.$headerimg.');'; } ?>">
+                <section class="subheader relative h-60 bg-slate-100 bg-center bg-cover py-10" style="<?php if (!empty($headerimg)){ echo 'background-image: url('.$headerimg.');'; } ?>">
     
                     <?php $overlay_colour = get_theme_mod( 'custom_overlay_colour' );
     
@@ -38,7 +38,7 @@
                         
                     <?php } ?>
     
-                    <div class="subheader-content relative container flex items-end justify-between h-full">
+                    <div class="subheader-content relative container flex items-end justify-between h-full z-10">
     
     		            <?php
     		        

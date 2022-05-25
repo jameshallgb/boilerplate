@@ -19,9 +19,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="profile" href="http://gmpg.org/xfn/11">
     
-        <script src="https://kit.fontawesome.com/6f446dcca7.js" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" href="wp-content/themes/boilerplate/public/css/tailwind.css" />
+        <?php /* <script src="https://kit.fontawesome.com/6f446dcca7.js" crossorigin="anonymous"></script> */ ?>
 
         <?php wp_head(); ?>
     
@@ -31,7 +29,7 @@
         
     <div id="page" class="site"><!-- Start Page -->
         
-    	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'nwd-theme' ); ?></a>
+    	<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'nwd-theme' ); ?></a>
     	
         <?php if ( ! is_page_template( 'blank-page.php' ) && ! is_page_template( 'blank-page-with-container.php' )):
     
@@ -69,6 +67,6 @@
     	    
     		<div class="container">
     		
-    		    <div class="flex"><!-- Start Row -->
+    		    <div class="md:flex"><!-- Start Row -->
     			    
                     <?php endif; ?>

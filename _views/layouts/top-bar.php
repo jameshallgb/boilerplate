@@ -11,7 +11,7 @@
         $second_col = get_theme_mod( 'top_bar_second_col' );
         $third_col = get_theme_mod( 'top_bar_third_col' ); ?>
 
-            <div class="top-bar flex items-center py-2">
+            <div class="top-bar flex items-center py-2 bg-slate-800">
 
                 <div class="container flex justify-between text-white">
 
