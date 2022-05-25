@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .button {
+        @apply text-white py-3 px-5 bg-slate-800;
+    }
+    .button:hover {
+        @apply bg-slate-200;
+    }
+}
+
 :root {
     --primaryColour: rgb(125, 198, 184);
     --secondaryColour: rgb(48, 56, 59);
@@ -154,30 +163,4 @@ body #page .dropdown-menu {
     .dropdown:hover > .dropdown-menu {
         display: block;
     }
-}
-
-
-/*--------------------------------------------------------------
-## Links / Buttons
---------------------------------------------------------------*/
-
-#page .btn,
-#page .button,
-#page .btn-primary {
-    color: rgb(255, 255, 255);
-    background-color: var(--primaryColour);
-    border: none;
-    padding: 0.8em 1.5em;
-    transition: 400ms ease;
-    border-radius: 0;
-    text-align: center;
-    line-height: 1.5 !important;
-}
-
-#page .btn:hover,
-#page .button:hover,
-#page .btn-primary:hover {
-    color: rgb(255, 255, 255);
-    background-color: var(--secondaryColour);
-    text-decoration: none;
 }
