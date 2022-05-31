@@ -22,7 +22,7 @@
                 
                 <footer id="colophon" class="site-footer">
             
-            		<div class="container d-flex pt-3 pb-3">
+            		<div class="container d-flex py-5">
                 
                         <div class="site-info flex-fill">
                             

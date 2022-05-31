@@ -13,10 +13,11 @@ module.exports = {
       center: true,
     },
     extend: {
-      colors: {
-        'themeColour':'#BAA333',
-      }
-
+      /* colors: {
+        "primary-color": "var(--primaryColor)",
+        "secondary-color": "var(--secondaryColour)"
+        "accent-color": "var(--accentColour)"
+      } */
     },
   },
   plugins: [],

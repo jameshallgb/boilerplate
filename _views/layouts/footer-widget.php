@@ -2,7 +2,7 @@
 
 if ( is_active_sidebar( 'footer-1' ) || is_active_sidebar( 'footer-2' ) || is_active_sidebar( 'footer-3' ) ) {?>
 
-    <div id="footer-widget" class="py-10">
+    <div id="footer-widget" class="py-12">
 
             <div class="container">
 

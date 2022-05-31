@@ -1,5 +1,5 @@
 
-<div id="primary" class="content-area py-10">
+<div id="primary" class="content-area py-12">
 
     <?php
     
