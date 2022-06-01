@@ -56,13 +56,15 @@
                         
                         <button class="navbar-toggler xl:hidden" type="button" data-target="#primary-nav" aria-expanded="false" aria-label="Toggle navigation">
                         
-                            Open
+                            <span class="toggler-closed">Open</span>
+
+                            <span class="toggler-open">Close</span>
                         
                         </button>
                     
                     </div>
 
-                    <div class="navbar-collapse collapse justify-center grow hidden xl:flex transition-all duration-500 mt-5 xl:mt-0">
+                    <div class="navbar-collapse collapse justify-center grow hidden xl:flex translate-x-full xl:translate-x-0 transition-all duration-500 mt-10 xl:mt-0">
 
                         <?php
                         

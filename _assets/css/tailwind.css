@@ -106,4 +106,9 @@ h5 {
     .main-nav-container.show-finish .flex-banner {
         @apply opacity-100 translate-y-0;
     }
+
+    .main-nav-container.show .navbar-toggler span.toggler-closed,
+    .main-nav-container:not(.show) .navbar-toggler span.toggler-open {
+        @apply hidden;
+    }
 }
