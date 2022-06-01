@@ -14,7 +14,7 @@ if ( ! is_active_sidebar( 'main-sidebar' ) ) {
 	
     }   ?>
 
-    <aside id="secondary" class="widget-area md:w-1/3 py-12 px-10" role="complementary">
+    <aside id="secondary" class="widget-area lg:w-5/12 py-12 px-10" role="complementary">
     
        <?php dynamic_sidebar( 'main-sidebar' );  ?>
        

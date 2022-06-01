@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12 col-lg-8 py-4">
+	<section id="primary" class="content-area py-12 lg:w-7/12 lg:pr-5">
 
 		<?php
 		if ( have_posts() ) : ?>
@@ -21,8 +21,6 @@ get_header(); ?>
 
 				/*
 				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
 				get_template_part( '_views/content/content', get_post_format() );
 

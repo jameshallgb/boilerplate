@@ -20,8 +20,8 @@
 # Style typography
 ------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem;
+h1, h2, h3, h4, h5, h6, .content-area p  {
+    @apply mb-4;
 }
 
 h1 {
@@ -42,10 +42,6 @@ h4 {
 
 h5 {
     font-size: 1rem;
-}
-
-div#primary p {
-    margin-bottom: 1rem;
 }
 
 /*---------------
@@ -87,7 +83,6 @@ div#primary p {
 
     body div#header-nav.main-nav-container.show {
         @apply fixed right-0 inset-y-0 h-full flex-col-reverse;
-        width: calc(100vw - 35vw);
     }
     
     .main-nav-container.show .navbar-collapse {
@@ -96,8 +91,7 @@ div#primary p {
 
     body div#header-nav.show-finish .navbar-collapse,
     body div#header-nav.main-nav-container.show .menu-animate div {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
+        @apply translate-x-0;
     }
 
     .main-nav-container.show .flex-banner {

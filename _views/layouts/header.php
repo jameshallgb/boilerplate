@@ -29,15 +29,15 @@
 
                 </div>
 
-                <div id="header-nav" class="main-nav-container justify-end flex grow z-30">
+                <div id="header-nav" class="main-nav-container w-6/12 justify-end flex grow z-30">
 
                     <div class="menu-animate xl:hidden">
                         
-                        <div class="menu-animated-layer layer-one fixed h-full top-0 right-0 bg-white translate-x-full transition-all duration-500" style="z-index: -1; width: calc(100vw - 35vw)"></div>
+                        <div class="menu-animated-layer layer-one w-6/12 fixed h-full top-0 right-0 bg-white translate-x-full transition-all duration-500" style="z-index: -1;"></div>
                     
-                        <div class="menu-animated-layer layer-two fixed h-full top-0 right-0 bg-slate-500 translate-x-full transition-all duration-500" style="z-index: -2; width: calc(100vw - 29vw);"></div>
+                        <div class="menu-animated-layer layer-two w-7/12 fixed h-full top-0 right-0 bg-slate-500 translate-x-full transition-all duration-500" style="z-index: -2;"></div>
                     
-                        <div class="menu-animated-layer layer-three fixed h-full top-0 right-0 bg-slate-900 translate-x-full transition-all duration-500" style="z-index: -3; width: calc(100vw - 22vw);"></div>
+                        <div class="menu-animated-layer layer-three w-8/12 fixed h-full top-0 right-0 bg-slate-900 translate-x-full transition-all duration-500" style="z-index: -3;"></div>
                         
                     </div>
 
@@ -62,7 +62,7 @@
                     
                     </div>
 
-                    <div class="navbar-collapse collapse justify-center grow hidden xl:flex transition-all duration-500">
+                    <div class="navbar-collapse collapse justify-center grow hidden xl:flex transition-all duration-500 mt-5 xl:mt-0">
 
                         <?php
                         

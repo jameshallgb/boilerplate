@@ -14,7 +14,7 @@
 
 get_header(); ?>
 
-    <section id="primary" class="content-area md:w-2/3 py-12 pr-5">
+    <section id="primary" class="content-area py-12 lg:w-7/12 lg:pr-5">
 	    
 		<main id="main" class="site-main" role="main">
 

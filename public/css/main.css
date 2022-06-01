@@ -614,6 +614,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .inline {
   display: inline;
 }
@@ -632,6 +636,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-60 {
   height: 15rem;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-7\/12 {
+  width: 58.333333%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .flex-auto {
@@ -716,19 +732,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .px-10 {
@@ -749,10 +760,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.pr-5 {
-  padding-right: 1.25rem;
 }
 
 .text-center {
@@ -784,7 +791,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 # Style typography
 ------------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .content-area p {
   margin-bottom: 1rem;
 }
 
@@ -806,10 +813,6 @@ h4 {
 
 h5 {
   font-size: 1rem;
-}
-
-div#primary p {
-  margin-bottom: 1rem;
 }
 
 /*---------------
@@ -842,30 +845,16 @@ div#primary p {
     right: 0px;
     height: 100%;
     flex-direction: column-reverse;
-    width: calc(100vw - 35vw);
   }
 
   .main-nav-container.show .navbar-collapse {
     display: block;
   }
 
-  /*
-    body div#header-nav .navbar-collapse,
-    body div#header-nav.main-nav-container .menu-animate div {
-        transition: all 800ms;
-    }
-*/
-
-  body div#header-nav.show-finish .navbar-collapse,
-    body div#header-nav.main-nav-container.show .menu-animate div {
-    transform: translateX(0);
+  body div#header-nav.show-finish .navbar-collapse, body div#header-nav.main-nav-container.show .menu-animate div {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-
-  /*
-    .main-nav-container .flex-banner {
-        transition: 400ms ease;
-    }
-*/
 
   .main-nav-container.show .flex-banner {
     --tw-translate-y: -100%;
@@ -888,17 +877,17 @@ div#primary p {
   .md\:flex {
     display: flex;
   }
-
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .lg\:w-1\/3 {
     width: 33.333333%;
   }
@@ -913,6 +902,10 @@ div#primary p {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .lg\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -925,6 +918,10 @@ div#primary p {
 
   .xl\:top-10 {
     top: 2.5rem;
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px;
   }
 
   .xl\:flex {
